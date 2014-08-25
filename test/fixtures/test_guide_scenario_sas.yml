@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  test_guide_scenario_id: 
+  statement: MyText
+  simple_question_id: 
+  group_question_id: 
+
+two:
+  test_guide_scenario_id: 
+  statement: MyText
+  simple_question_id: 
+  group_question_id: 

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @simple_question_alternative.name %>
+</p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @simple_question_alternative.media %>
+</p>
+
+<p>
+  <strong>Correct:</strong>
+  <%= @simple_question_alternative.correct %>
+</p>
+
+<p>
+  <strong>Simple question:</strong>
+  <%= @simple_question_alternative.simple_question %>
+</p>
+
+<%= link_to 'Edit', edit_simple_question_alternative_path(@simple_question_alternative) %> |
+<%= link_to 'Back', simple_question_alternatives_path %>

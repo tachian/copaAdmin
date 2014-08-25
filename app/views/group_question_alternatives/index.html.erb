@@ -1,0 +1,31 @@
+<h1>Listing group_question_alternatives</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Correct</th>
+      <th>Group question statement</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_question_alternatives.each do |group_question_alternative| %>
+      <tr>
+        <td><%= group_question_alternative.name %></td>
+        <td><%= group_question_alternative.correct %></td>
+        <td><%= group_question_alternative.group_question_statement %></td>
+        <td><%= link_to 'Show', group_question_alternative %></td>
+        <td><%= link_to 'Edit', edit_group_question_alternative_path(group_question_alternative) %></td>
+        <td><%= link_to 'Destroy', group_question_alternative, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group question alternative', new_group_question_alternative_path %>

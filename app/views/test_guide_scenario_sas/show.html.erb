@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Test guide scenario:</strong>
+  <%= @test_guide_scenario_sa.test_guide_scenario %>
+</p>
+
+<p>
+  <strong>Statement:</strong>
+  <%= @test_guide_scenario_sa.statement %>
+</p>
+
+<p>
+  <strong>Simple question:</strong>
+  <%= @test_guide_scenario_sa.simple_question %>
+</p>
+
+<p>
+  <strong>Group question:</strong>
+  <%= @test_guide_scenario_sa.group_question %>
+</p>
+
+<%= link_to 'Edit', edit_test_guide_scenario_sa_path(@test_guide_scenario_sa) %> |
+<%= link_to 'Back', test_guide_scenario_sas_path %>

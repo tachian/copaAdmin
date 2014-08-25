@@ -1,0 +1,29 @@
+<%= form_for(@test_guide_scenario) do |f| %>
+  <% if @test_guide_scenario.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@test_guide_scenario.errors.count, "error") %> prohibited this test_guide_scenario from being saved:</h2>
+
+      <ul>
+      <% @test_guide_scenario.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :test_guide_analysis_id %><br>
+    <%= f.text_field :test_guide_analysis_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :media %><br>
+    <%= f.text_field :media %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

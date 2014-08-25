@@ -1,0 +1,45 @@
+<%= form_for(@test_guide_basic) do |f| %>
+  <% if @test_guide_basic.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@test_guide_basic.errors.count, "error") %> prohibited this test_guide_basic from being saved:</h2>
+
+      <ul>
+      <% @test_guide_basic.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :test_id %><br>
+    <%= f.text_field :test_id %>
+  </div>
+  <div class="field">
+    <%= f.label :test_type_id %><br>
+    <%= f.text_field :test_type_id %>
+  </div>
+  <div class="field">
+    <%= f.label :order %><br>
+    <%= f.number_field :order %>
+  </div>
+  <div class="field">
+    <%= f.label :message %><br>
+    <%= f.text_area :message %>
+  </div>
+  <div class="field">
+    <%= f.label :simple_question_id %><br>
+    <%= f.text_field :simple_question_id %>
+  </div>
+  <div class="field">
+    <%= f.label :group_question_references %><br>
+    <%= f.text_field :group_question_references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyText
+  media: MyString
+  correct: false
+  simple_question_id: 
+
+two:
+  name: MyText
+  media: MyString
+  correct: false
+  simple_question_id: 

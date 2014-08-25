@@ -1,0 +1,29 @@
+<h1>Listing simple_questions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Media</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @simple_questions.each do |simple_question| %>
+      <tr>
+        <td><%= simple_question.name %></td>
+        <td><%= simple_question.media %></td>
+        <td><%= link_to 'Show', simple_question %></td>
+        <td><%= link_to 'Edit', edit_simple_question_path(simple_question) %></td>
+        <td><%= link_to 'Destroy', simple_question, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Simple question', new_simple_question_path %>

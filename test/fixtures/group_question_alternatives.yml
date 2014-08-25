@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  correct: false
+  group_question_statement_id: 
+
+two:
+  name: MyString
+  correct: false
+  group_question_statement_id: 

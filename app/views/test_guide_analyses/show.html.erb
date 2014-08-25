@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @test_guide_analysis.test %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_guide_analysis.name %>
+</p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @test_guide_analysis.media %>
+</p>
+
+<p>
+  <strong>Statement:</strong>
+  <%= @test_guide_analysis.statement %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @test_guide_analysis.order %>
+</p>
+
+<%= link_to 'Edit', edit_test_guide_analysis_path(@test_guide_analysis) %> |
+<%= link_to 'Back', test_guide_analyses_path %>

@@ -1,0 +1,29 @@
+<%= form_for(@group_question_alternative) do |f| %>
+  <% if @group_question_alternative.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@group_question_alternative.errors.count, "error") %> prohibited this group_question_alternative from being saved:</h2>
+
+      <ul>
+      <% @group_question_alternative.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :correct %><br>
+    <%= f.check_box :correct %>
+  </div>
+  <div class="field">
+    <%= f.label :group_question_statement_id %><br>
+    <%= f.text_field :group_question_statement_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

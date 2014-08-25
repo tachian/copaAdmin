@@ -1,0 +1,33 @@
+<h1>Listing test_guide_scenario_sas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test guide scenario</th>
+      <th>Statement</th>
+      <th>Simple question</th>
+      <th>Group question</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_guide_scenario_sas.each do |test_guide_scenario_sa| %>
+      <tr>
+        <td><%= test_guide_scenario_sa.test_guide_scenario %></td>
+        <td><%= test_guide_scenario_sa.statement %></td>
+        <td><%= test_guide_scenario_sa.simple_question %></td>
+        <td><%= test_guide_scenario_sa.group_question %></td>
+        <td><%= link_to 'Show', test_guide_scenario_sa %></td>
+        <td><%= link_to 'Edit', edit_test_guide_scenario_sa_path(test_guide_scenario_sa) %></td>
+        <td><%= link_to 'Destroy', test_guide_scenario_sa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test guide scenario sa', new_test_guide_scenario_sa_path %>

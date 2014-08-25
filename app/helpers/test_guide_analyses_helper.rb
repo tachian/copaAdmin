@@ -1,0 +1,2 @@
+module TestGuideAnalysesHelper
+end

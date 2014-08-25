@@ -1,0 +1,39 @@
+<h1>Listing test_guide_basics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Test</th>
+      <th>Test type</th>
+      <th>Order</th>
+      <th>Message</th>
+      <th>Simple question</th>
+      <th>Group question references</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_guide_basics.each do |test_guide_basic| %>
+      <tr>
+        <td><%= test_guide_basic.name %></td>
+        <td><%= test_guide_basic.test %></td>
+        <td><%= test_guide_basic.test_type %></td>
+        <td><%= test_guide_basic.order %></td>
+        <td><%= test_guide_basic.message %></td>
+        <td><%= test_guide_basic.simple_question %></td>
+        <td><%= test_guide_basic.group_question_references %></td>
+        <td><%= link_to 'Show', test_guide_basic %></td>
+        <td><%= link_to 'Edit', edit_test_guide_basic_path(test_guide_basic) %></td>
+        <td><%= link_to 'Destroy', test_guide_basic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test guide basic', new_test_guide_basic_path %>

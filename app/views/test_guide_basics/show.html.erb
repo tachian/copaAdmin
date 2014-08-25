@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_guide_basic.name %>
+</p>
+
+<p>
+  <strong>Test:</strong>
+  <%= @test_guide_basic.test %>
+</p>
+
+<p>
+  <strong>Test type:</strong>
+  <%= @test_guide_basic.test_type %>
+</p>
+
+<p>
+  <strong>Order:</strong>
+  <%= @test_guide_basic.order %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @test_guide_basic.message %>
+</p>
+
+<p>
+  <strong>Simple question:</strong>
+  <%= @test_guide_basic.simple_question %>
+</p>
+
+<p>
+  <strong>Group question references:</strong>
+  <%= @test_guide_basic.group_question_references %>
+</p>
+
+<%= link_to 'Edit', edit_test_guide_basic_path(@test_guide_basic) %> |
+<%= link_to 'Back', test_guide_basics_path %>

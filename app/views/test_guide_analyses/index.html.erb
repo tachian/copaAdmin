@@ -1,0 +1,35 @@
+<h1>Listing test_guide_analyses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Name</th>
+      <th>Media</th>
+      <th>Statement</th>
+      <th>Order</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_guide_analyses.each do |test_guide_analysis| %>
+      <tr>
+        <td><%= test_guide_analysis.test %></td>
+        <td><%= test_guide_analysis.name %></td>
+        <td><%= test_guide_analysis.media %></td>
+        <td><%= test_guide_analysis.statement %></td>
+        <td><%= test_guide_analysis.order %></td>
+        <td><%= link_to 'Show', test_guide_analysis %></td>
+        <td><%= link_to 'Edit', edit_test_guide_analysis_path(test_guide_analysis) %></td>
+        <td><%= link_to 'Destroy', test_guide_analysis, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test guide analysis', new_test_guide_analysis_path %>

@@ -1,0 +1,33 @@
+<h1>Listing test_guide_scenario_aps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test guide scenario</th>
+      <th>Statement</th>
+      <th>Simple question</th>
+      <th>Group question</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @test_guide_scenario_aps.each do |test_guide_scenario_ap| %>
+      <tr>
+        <td><%= test_guide_scenario_ap.test_guide_scenario %></td>
+        <td><%= test_guide_scenario_ap.statement %></td>
+        <td><%= test_guide_scenario_ap.simple_question %></td>
+        <td><%= test_guide_scenario_ap.group_question %></td>
+        <td><%= link_to 'Show', test_guide_scenario_ap %></td>
+        <td><%= link_to 'Edit', edit_test_guide_scenario_ap_path(test_guide_scenario_ap) %></td>
+        <td><%= link_to 'Destroy', test_guide_scenario_ap, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Test guide scenario ap', new_test_guide_scenario_ap_path %>

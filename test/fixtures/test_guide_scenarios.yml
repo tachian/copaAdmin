@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  test_guide_analysis_id: 
+  name: MyString
+  media: MyString
+
+two:
+  test_guide_analysis_id: 
+  name: MyString
+  media: MyString

@@ -1,0 +1,29 @@
+<h1>Listing group_question_statements</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Group question</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @group_question_statements.each do |group_question_statement| %>
+      <tr>
+        <td><%= group_question_statement.name %></td>
+        <td><%= group_question_statement.group_question %></td>
+        <td><%= link_to 'Show', group_question_statement %></td>
+        <td><%= link_to 'Edit', edit_group_question_statement_path(group_question_statement) %></td>
+        <td><%= link_to 'Destroy', group_question_statement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Group question statement', new_group_question_statement_path %>

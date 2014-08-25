@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Test guide analysis:</strong>
+  <%= @test_guide_scenario.test_guide_analysis %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @test_guide_scenario.name %>
+</p>
+
+<p>
+  <strong>Media:</strong>
+  <%= @test_guide_scenario.media %>
+</p>
+
+<%= link_to 'Edit', edit_test_guide_scenario_path(@test_guide_scenario) %> |
+<%= link_to 'Back', test_guide_scenarios_path %>

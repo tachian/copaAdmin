@@ -1,0 +1,33 @@
+<%= form_for(@simple_question_alternative) do |f| %>
+  <% if @simple_question_alternative.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@simple_question_alternative.errors.count, "error") %> prohibited this simple_question_alternative from being saved:</h2>
+
+      <ul>
+      <% @simple_question_alternative.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_area :name %>
+  </div>
+  <div class="field">
+    <%= f.label :media %><br>
+    <%= f.text_field :media %>
+  </div>
+  <div class="field">
+    <%= f.label :correct %><br>
+    <%= f.check_box :correct %>
+  </div>
+  <div class="field">
+    <%= f.label :simple_question_id %><br>
+    <%= f.text_field :simple_question_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

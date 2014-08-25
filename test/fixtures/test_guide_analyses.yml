@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  test_id: 
+  name: MyString
+  media: MyString
+  statement: MyText
+  order: 1
+
+two:
+  test_id: 
+  name: MyString
+  media: MyString
+  statement: MyText
+  order: 1
