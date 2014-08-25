@@ -21,6 +21,10 @@ module CopaAdmin
     # config.i18n.default_locale = :de
 
     config.i18n.enforce_available_locales = true
+
+    config.assets.initialize_on_precompile = false
+    config.assets.precompile += %w[active_admin.css active_admin.js print.css]
+    config.assets.precompile += %w[active_admin/print.css]
     
   end
 end
